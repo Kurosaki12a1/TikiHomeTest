@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorOrange">#f44336</color>
+    <color name="colorRed">#e91e63</color>
+    <color name="colorPurple">#9c27b0</color>
+    <color name="colorBlue">#673ab7</color>
+    <color name="colorBlueOcean">#3f51b5</color>
+    <color name="colorBlueSky">#2196f3</color>
+    <color name="colorBlueSkyFresh">#03a9f4</color>
+    <color name="colorCyan">#00bcd4</color>
+    <color name="colorGreen">#009688</color>
+    <color name="colorGreenLeaves">#4caf50</color>
+    <color name="colorGreenGrass">#8bc34a</color>
+    <color name="colorYellow">#cddc39</color>
+    <color name="colorYellowStronger">#ffeb3b</color>
+    <color name="colorYellowSoStronger">#ffc107</color>
+    <color name="colorOrangeWeaker">#ff9800</color>
+    <color name="colorGrayStrong">#607d8b</color>
+    <color name="colorWhite">#ffffff</color>
+</resources>
