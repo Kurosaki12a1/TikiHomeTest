@@ -63,11 +63,11 @@ class HomeTestActivity : BaseActivity<HomeTestViewModel>() {
         mViewModel.listKeyword.observeForever {
             Log.d(TAG, "List Data Received: $it")
             //convert data to View Holder better than convert on View Holder. This will save performance
-            adapterRV.setData(convertListData(it))
+            adapterRV.setData(it)
         }
     }
 
-    private fun convertListData(listData: ArrayList<HotKeyword>): ArrayList<HotKeyword> {
+  /*  private fun convertListData(listData: ArrayList<HotKeyword>): ArrayList<HotKeyword> {
         val tempListData = ArrayList<HotKeyword>()
         for (i in 0 until listData.size) {
             val splitText = listData[i].text.split(" ")
@@ -80,14 +80,14 @@ class HomeTestActivity : BaseActivity<HomeTestViewModel>() {
                     tempListData.add(listData[i])
                 }
                 else -> {
-                    /**
+                    *//**
                      * This for case word with 3 words above
                      * First, get total length character on the string without space
                      * Second,
                      * Assume first words has length is a, and length other words will be [totalLengthCharacter] - a
                      * So the different between char will be abs(2*a - [totalLengthCharacter])
                      * Third, then now go find smallest different
-                     */
+                     *//*
                     val totalLengthCharacter = listData[i].text.replace(" ", "").length
                     var minimumDif = 2 * splitText[0].length - totalLengthCharacter
                     var tempMinimumDif = minimumDif
@@ -103,10 +103,10 @@ class HomeTestActivity : BaseActivity<HomeTestViewModel>() {
                         } else {
                             tempMinimumDif += 2 * splitText[i].length
                             count++
-                            /**
+                            *//**
                              *  Time by time, if the different keep increase then it will be always increase
                              *  So we stop there.
-                             */
+                             *//*
                             if (count >= 2) {
                                 break
                             }
@@ -119,6 +119,6 @@ class HomeTestActivity : BaseActivity<HomeTestViewModel>() {
 
         }
         return tempListData
-    }
+    }*/
 
 }
