@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.View
 import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.kuro.mvvm.R
@@ -60,11 +61,11 @@ class HomeTestActivity : BaseActivity<HomeTestViewModel>() {
     }
 
     override fun observeData() {
-        mViewModel.listKeyword.observeForever {
+        mViewModel.listKeyword.observe(this, Observer {
             Log.d(TAG, "List Data Received: $it")
             //convert data to View Holder better than convert on View Holder. This will save performance
             adapterRV.setData(it)
-        }
+        })
     }
 
   /*  private fun convertListData(listData: ArrayList<HotKeyword>): ArrayList<HotKeyword> {
